@@ -1,0 +1,107 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:  hsl(0, 0%, 94%);
+}
+.main {
+    width: 655px;
+    height: 480px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    border-bottom-right-radius: 30%;
+}
+.wrapper{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content{
+    display: flex;
+    gap: 25px;
+    color: hsl(0, 1%, 44%);
+}
+.items label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+.items input{
+    font-size: 32px;
+    font-weight: bolder;
+    width: 125px;
+    height: 60px;
+    padding-left: 25px;
+    border-radius: 15px;
+    border: 1px solid  hsl(0, 0%, 86%);
+   
+}
+.items input::placeholder{
+    font-size: 32px;
+    font-weight: bolder;
+}
+.items input:focus{
+    border-color: hsl(259, 100%, 65%);
+    outline: hsl(259, 100%, 65%);
+}
+
+.submitBlock {
+    display: flex;
+    align-items: center;
+}
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: hsl(0, 0%, 86%);
+}
+#submitBtn{
+    cursor: pointer;
+    padding: 25px;
+    border: none;
+    border-radius: 50%;
+    background-color: hsl(259, 100%, 65%);
+    transition: .1s all linear;
+}
+#submitBtn:active{
+    background-color: hsl(0, 0%, 8%);
+}
+
+.yearResults, .monthResults, .dayResults {
+    font-size: 50px;
+    color: hsl(0, 0%, 8%);
+    font-weight: 800;
+    font-style: italic;
+}
+#yearResult, #monthResult, #dayResult {
+    color: hsl(259, 100%, 65%);
+    letter-spacing: 5px;
+
+}
+.error{
+    color: hsl(0, 100%, 67%);
+    border-color: hsl(0, 100%, 67%) !important;
+}
+.errorText {
+    color: hsl(0, 100%, 67%);
+    font-size: 12px;
+    font-style: italic;
+    margin-top: 5px;
+}

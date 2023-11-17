@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <!-- <link rel="stylesheet" href="font.css"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./syle.css">
+
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <main class="main">
+    <div class="wrapper">
+      <div class="data-accept">
+        <form action="" id="form">
+          <div class="content">
+            <div class="items">
+              <label for="Day">DAY</label>
+              <input type="number" placeholder="DD" id="Day">
+              <p class="errorText"></p>
+            </div>
+            <div class="items">
+              <label for="Month">MONTH</label>
+              <input type="number" placeholder="MM" id="Month">
+              <p class="errorText"></p>
+            </div>
+            <div class="items">
+              <label for="Year">YEAR</label>
+              <input type="number" placeholder="YYYY" id="Year">
+              <p class="errorText"></p>
+            </div>
+          </div>
+          <div class="submitBlock">
+            <div class="line"></div>
+            <button type="submit" id="submitBtn"><img src="./assets/images/icon-arrow.svg" alt="arrow.svg"></button>
+          </div>
+        </form>
+      </div>
+      <div class="result">
+        <h1 class="yearResults"><span id="yearResult">--</span>years</h1>
+        <h1 class="monthResults"><span id="monthResult">--</span>months</h1>
+        <h1 class="dayResults"><span id="dayResult">--</span>days</h1>
+      </div>
+    </div>
+  </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Obidjon</a>.
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
